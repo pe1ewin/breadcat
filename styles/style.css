@@ -3,13 +3,80 @@
     font-family: 'Garet-heavy';
     src: url('../fonts/Garet-Heavy.ttf');
 }
+@media (max-width: 768px) {
+    #main {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 8px;
+    }
+    .block1 {
+        background-color: #24326A;
+        padding: 0px;
+    }
+    .block2 {
+        background-color: #ffffff;
+    }
+    .photo {
+        width: 50%;
+    }
+    .footer {
+        background-color: #24326A;
+        background-size: 100%;   
+    }
+    .footer-brand {
+        font-size: 200%;
+    }
+    .footer-text {
+        font-size: 100%;
+    }
 
-main {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 20px;
 }
+@media (min-width: 1920px) {
+    .block2 {
+        background-color: #ffffff;
+        background-size: 100%;
+        background-image: url("../assets/page2.png");
+        background-repeat: no-repeat;
+    }
+}
+@media (min-width: 768px) {
+    #main {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 20px;
+    }
+    .block1 {
+        background-color: #24326A;
+        padding: 0px;
+        background-image: url("../assets/mainpage.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center; /* Center the image */  
+    }
+    .block2 {
+        background-color: #ffffff;
+    }
+    .photo {
+        width: 80%;
+    }
+    .footer {
+        background-color: #24326A;
+        background-size: 100%;
+        background-image: url('../assets/footer_back.png');
+        background-repeat: no-repeat;
+        background-position: center; /* Center the image */   
+    }
+    .footer-brand {
+        font-size: 300%;
+    }
+    .footer-text {
+        font-size: 200%;
+    }
+}
+
+
 .header {
     min-height: 100px;
     background-color: #24326A;
@@ -47,14 +114,6 @@ main {
     font-size: 150%;
     font-family: 'Montserrat';
     line-height: 90%;
-}
-.block1 {
-    background-color: #24326A;
-    padding: 0px;
-    background-image: url("../assets/mainpage.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center; /* Center the image */  
 }
 .kurs {
     color: #ffffff;
@@ -107,14 +166,6 @@ main {
 .sign-button:hover{
     background-color: #ffffffba;
 }
-.block2 {
-    background-color: #ffffff;
-    background-position:0 200%;
-    background-size: 100%;
-    background-image: url("../assets/page2.png");
-    background-repeat: no-repeat;
-}
-
 .paragraph2 {
     text-align: start;
     margin-left: 12.243%;
@@ -138,7 +189,7 @@ main {
     font-family: Montserrat;
     color: #24326A;
     line-height: 90%;
-    font-size: 3vw;
+    font-size: 250%;
     font-weight: 800;
 }
 .discription1 {
@@ -147,7 +198,7 @@ main {
     font-family: Montserrat;
     color: #24326A;
     line-height: 90%;
-    font-size: 1.3vw;
+    font-size: 130%;
     font-weight: 800;
 }
 
@@ -156,7 +207,7 @@ main {
     color: #000000;
     width: 100%;
     line-height: 125%;
-    font-size: 1.9vw;
+    font-size: 200%;
     font-weight: 400;
     margin-top: 3%;
     padding-left: 4%;
@@ -165,28 +216,28 @@ main {
     font-family: 'Garet-heavy';
     color: #24326A;
     line-height: 90%;
-    font-size: 5vw;
+    font-size: 400%;
     margin: 5% 0 6% 8%;
 }
 .page2-abzac2-title {
     font-family: Montserrat;
     color: #24326A;
     line-height: 125%;
-    font-size: 3vw;
+    font-size: 250%;
     font-weight: 800;
 }
 .page2-abzac3-title {
     font-family: Montserrat;
     color: #24326A;
     line-height: 125%;
-    font-size: 3vw;
+    font-size: 250%;
     font-weight: 800;
 }
 .page2 {
     font-family: Montserrat;
     color: #000000;
     line-height: 125%;
-    font-size: 3vw;
+    font-size: 200%;
     font-weight: 400;
 }
 .page2-abzac2 {
@@ -208,9 +259,6 @@ main {
 }
 .card1-page3 {
     padding-top: 5%;
-}
-.photo {
-    width: 80%;
 }
 .name {
     color: #ffffff;
@@ -254,18 +302,12 @@ main {
 .video {
     border-radius: 45px;
     width: 80%;
+    margin-bottom: 2%;
 }
-.footer {
-    background-color: #24326A;
-    background-size: 100%;
-    background-image: url('../assets/footer_back.png');
-    background-repeat: no-repeat;
-    background-position: center; /* Center the image */   
-}
+
 .footer-brand {
     float: left;
     color: #ffffff;
-    font-size: 300%;
     font-family: 'Montserrat';
     padding-left: 5%;
     padding-top: 3%;
@@ -275,7 +317,6 @@ main {
 .footer-text {
     text-align: start;
     color: #ffffff;
-    font-size: 200%;
     font-family: 'Montserrat';
     padding-left: 5%;
     padding-top: 10%;
