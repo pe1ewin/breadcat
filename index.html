@@ -55,9 +55,19 @@
                       <p class="block1-abzac2">Совершенствуй свои навыки вместе<br>
                         с нами - стань профессионалом<br>
                         в хищении хлеба!</p>
-                        <button type="button" class="btn sign-button">ЗАПИСАТЬСЯ</button>
+                        <button type="button" class="btn sign-button" onclick="showForm()">ЗАПИСАТЬСЯ</button>
                     </div>
                   </div>
+                    <div class="popBack">
+                      <div class="popupForm" id="ShowForm">
+                        <h2>Оставьте свои контакты обратной связи и мы с вами свяжемся!</h2>
+                        <label for="email"><b>EMAIL: </b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+                        <label for="phone"><b>Phone Number: </b></label>
+                        <input type="text" placeholder="Enter Phone Number" name="phone" required>
+                        <button class="btn send-button" onclick="closeForm()">ОТПРАВИТЬ</button>
+                      </div>
+                    </div>
                 </div>
               </div>
               <div class="container-fluid block2">
@@ -170,6 +180,7 @@
         </div>
     </footer>
         <!-- Bootstrap JavaScript Libraries -->
+         <script src="js/script.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
