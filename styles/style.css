@@ -166,24 +166,15 @@
 .sign-button:hover{
     background-color: #ffffffba;
 }
-.popBack {
-    display: flex;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    background-color: #24326A;
-
+.email {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
 }
-.popupForm {
-    display:none;
-    width: 110%;
-    z-index: 2;
-    background-color: #ffffff;
-    border-radius: 20px;
-}
-.send-button {
-    background-color: #24326A;
-    color: #ffffff;
+.phone {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
 }
 .paragraph2 {
     text-align: start;
