@@ -55,19 +55,33 @@
                       <p class="block1-abzac2">Совершенствуй свои навыки вместе<br>
                         с нами - стань профессионалом<br>
                         в хищении хлеба!</p>
-                        <button type="button" class="btn sign-button" onclick="showForm()">ЗАПИСАТЬСЯ</button>
+                        <button type="button" class="btn sign-button" data-bs-toggle="modal" data-bs-target="#exampleModal">ЗАПИСАТЬСЯ</button>
                     </div>
                   </div>
-                    <div class="popBack">
-                      <div class="popupForm" id="ShowForm">
-                        <h2>Оставьте свои контакты обратной связи и мы с вами свяжемся!</h2>
-                        <label for="email"><b>EMAIL: </b></label>
-                        <input type="text" placeholder="Enter Email" name="email" required>
-                        <label for="phone"><b>Phone Number: </b></label>
-                        <input type="text" placeholder="Enter Phone Number" name="phone" required>
-                        <button class="btn send-button" onclick="closeForm()">ОТПРАВИТЬ</button>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Оставьте свои контакты обратной связи и мы с вами свяжемся!</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="email">
+                            <label for="email"><b>EMAIL: </b></label>
+                            <input type="text" placeholder="Enter Email" name="email" required>
+                          </div>
+                          <div class="phone">
+                            <label for="phone"><b>Phone Number: </b></label>
+                            <input type="text" placeholder="Enter Phone Number" name="phone" required>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                          <button type="button" class="btn btn-primary" onclick=Send()>Сохранить изменения</button>
+                        </div>
                       </div>
                     </div>
+                  </div>
                 </div>
               </div>
               <div class="container-fluid block2">
